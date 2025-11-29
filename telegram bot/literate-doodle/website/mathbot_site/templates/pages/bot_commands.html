@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<style>
+.starter
+{
+	text-align: center;
+}
+
+.commands
+{
+	font-size: 20pt;
+	background-color: #35AD09;
+	margin-left: 5%;
+	padding-right: 70%;
+	border-spacing: 19px;
+}
+</style>
+
+<div class="starter">
+	<h1>Команды для бота</h1> <!--Этот текст жирным шрифтом-->
+	<h2>Здесь находятся все существующие команды для бота</h2> <!--А тут таким серым тусклым-->
+</div>
+
+<table class="commands">
+    <tr>
+        <th>Команда</th>
+        <th>Описание</th>
+    </tr>
+    <tr>
+        <td>/start</td>
+        <td>Запуск бота</td>
+    </tr>
+    <tr>
+        <td>/derivative</td>
+        <td>Получить производную</td>
+    </tr>
+    <tr>
+        <td>/integral</td>
+        <td>Вычисляет интеграл</td>
+    </tr>
+    <tr>
+        <td>/taylorseq</td>
+        <td>Найти приближенную функцию</td>
+    </tr>
+    <tr>
+        <td>/lim</td>
+        <td>Найти предел</td>
+    </tr>
+    <tr>
+        <td>/diffequation</td>
+        <td>Продиффиринцировать</td>
+    </tr>
+    <tr>
+        <td>/asymptotes</td>
+        <td>Вычисляет асимптоты функции</td>
+    </tr>
+    <tr>
+        <td>/fullanalysis</td>
+        <td>Делает полный анализ</td>
+    </tr>
+    <tr>
+        <td>/factorial</td>
+        <td>Вычисляет факториал</td>
+    </tr>
+    <tr>
+        <td>/logarithm</td>
+        <td>Вычисляет логарифм</td>
+    </tr>
+    <tr>
+        <td>/lcm</td>
+        <td>Получить НОК</td>
+    </tr>
+    <tr>
+        <td>/elevation</td>
+        <td>Возвести в степень</td>
+    </tr>
+    <tr>
+        <td>/sqrt</td>
+        <td>Вычисляет корень</td>
+    </tr>
+</table>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+{% endblock %}

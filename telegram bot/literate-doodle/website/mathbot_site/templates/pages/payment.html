@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+
+{% block main %}
+
+<style>
+.pay_page {
+    text-align: center;
+}
+
+.pay_btn {
+    font-size: 50px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: #3AC906;
+    box-shadow: 0 5px 0 #35AD09;
+}
+
+.pay_btn:hover {
+    background: #35AD09;
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+.pay_text
+{
+    display: flex;
+    margin-bottom: 100px;
+    margin-left: 16%;
+}
+</style>
+
+<div class="pay_page">
+	<h1>Пожертвование</h1>
+	<div class="pay_text">
+		<img src="https://flomaster.top/uploads/posts/2022-07/1658373801_1-flomaster-club-p-narisovannie-dengi-png-krasivo-1.png" alt="Картинка денег" width="200" height="200">
+		<p style="font-size: 20px;">Здесь вы можете спонсировать нашего телеграм-бота. Помните, что без денег проект не сможет развиваться.</p>
+	</div>
+	<button class="pay_btn">Пожертвовать</button>
+</div>
+
+{% endblock %}

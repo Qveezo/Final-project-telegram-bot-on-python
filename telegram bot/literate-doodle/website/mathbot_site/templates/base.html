@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_name }}</title>
+    <style>
+    body {
+
+    	margin: 0;
+    	padding: 0;
+    	background-color: #c7e49c;
+	}
+    </style>
+    {% block extra_css %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        {% include 'header.html' %}
+    </header>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer>
+        {% include 'footer.html' %}
+    </footer>
+</body>
+</html>
